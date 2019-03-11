@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.0'
+    defaultConfig {
+        applicationId "com.lxj.xpopupdemo"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:26.0.0'
+    compile 'com.android.support:recyclerview-v7:26.0.0'
+//    compile 'com.android.support:design:26.0.0'
+    compile 'com.lxj:easyadapter:1.0.1'
+//    compile 'com.github.bumptech.glide:glide:4.8.0'
+//    compile 'com.github.bumptech.glide:glide:4.8.0'
+
+
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+
+    compile project(':library')
+    compile 'com.blankj:utilcode:1.23.6'
+    compile 'com.squareup.leakcanary:leakcanary-android:1.6.2'
+    compile 'com.squareup.leakcanary:leakcanary-support-fragment:1.6.2'
+}

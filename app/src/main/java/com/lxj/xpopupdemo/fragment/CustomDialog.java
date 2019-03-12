@@ -17,6 +17,8 @@ import com.lxj.xpopupdemo.R;
  * DrawerPopupView，（左右抽屉式对话框）
  * PartShadowPopupView（在对应view底部显示对话框，需要设置 .atView(v)  // 依附于所点击的View）
  * 其中之一。假设需要自定义Center类型的弹窗：
+ *
+ * 详细使用地址  https://github.com/zhudaihao/XPopup-master
  */
 
 public class CustomDialog extends PartShadowPopupView {
